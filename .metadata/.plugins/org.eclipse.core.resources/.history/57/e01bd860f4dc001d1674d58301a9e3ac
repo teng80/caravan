@@ -1,0 +1,24 @@
+package question;
+
+public class Alphabet {
+	
+	char str;
+	
+	public char getStr() {
+		return str;
+	}
+
+	public void setStr(char str) {
+		this.str = str;
+	}
+
+	public String process() {
+		
+		String str = "";
+	
+		for (char i = 'a'; i <= str; i++) {
+			str += i;
+		}
+		return str;
+	}
+}

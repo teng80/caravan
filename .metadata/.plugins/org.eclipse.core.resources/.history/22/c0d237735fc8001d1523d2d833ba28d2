@@ -1,0 +1,20 @@
+package Chapter05;
+/*
+ * instanceof 연산자 사용(상속)
+ * */
+class Person{}
+class Student extends Person{}
+class Researcher extends Person{}
+class Professor extends Person{}
+
+public class InstanceOfEx {
+	static void print(Person p ) { //Person p = new Student()=>업캐스팅
+		if (p instanceof Person) {
+			System.out.println("Person "); //참이면 출력
+		}
+	}
+	public static void main(String[] args) {
+		print(new Student());
+
+	}
+}

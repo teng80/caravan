@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form mathod="post" action="12-8_threeForm.jsp">
+		<p>
+		입력 된 수 :
+			<input type="text" name="won"><br>
+			<input type="submit" value="전송">
+		</p>
+	</form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+package question;
+
+public class Alphabet {
+	
+	char s;
+	
+	
+	public char getS() {
+		return s;
+	}
+
+
+	public void setS(char s) {
+		this.s = s;
+	}
+
+
+	public String process() {
+		
+		String str = "";
+		// char result = 0;
+		
+		// char c = s.charAt(0);
+		for (char i = 'a'; i <= s; i++) {
+			// result = c;
+			str += i;
+		}
+		return str;
+	}
+}

@@ -1,0 +1,13 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<jsp:useBean class="area.Rectangle2" id="rectangle2"></jsp:useBean>
+<jsp:setProperty property="*" name="rectangle2"/>
+	
+	<h4>당신이 입력한 정보입니다.</h4>
+	
+	<%
+		out.print("가로길이가  "+ rectangle2.getWidth() 
+				+ "이고, 세로길이가 " +	rectangle2.getHeight() 
+				+ "인 사각형의 면적은 " + rectangle2.process(rectangle2.getWidth(), rectangle2.getHeight()));
+	%>
+    

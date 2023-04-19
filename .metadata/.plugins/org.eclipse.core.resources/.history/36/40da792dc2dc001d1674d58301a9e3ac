@@ -1,0 +1,20 @@
+package question;
+
+public class DivAndRemains {
+	private int num;
+	
+	public boolean process(int i) {
+		int ten = num/10;
+		int one = num%10;
+		return ten == one;
+	}
+
+	public int getNum() {
+		return num;
+	}
+
+	public void setNum(int num) {
+		this.num = num;
+	}
+	
+}

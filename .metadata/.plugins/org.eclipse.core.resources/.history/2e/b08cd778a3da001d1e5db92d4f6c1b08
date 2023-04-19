@@ -1,0 +1,9 @@
+package question;
+
+public class GuGuDan {
+	
+	public int prosess(int n) {
+		return 5 * n;
+	}
+	
+}

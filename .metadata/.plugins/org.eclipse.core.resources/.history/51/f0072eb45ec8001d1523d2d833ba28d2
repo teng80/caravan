@@ -1,0 +1,12 @@
+package Chapter05;
+/*
+ * instanceof 연산자 사용(상속)
+ * */
+public class InstanceOfEx {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

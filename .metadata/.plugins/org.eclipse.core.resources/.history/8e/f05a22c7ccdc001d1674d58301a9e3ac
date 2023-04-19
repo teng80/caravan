@@ -1,0 +1,44 @@
+package question;
+
+import java.util.Scanner;
+
+public class ThreeSixNine {
+	private int count0;
+	private int num;
+	private int a;
+	private int b;
+
+	a = num/10;
+	b = num%10;
+
+	
+}
+
+
+
+
+
+//count : 3,6,9갯수
+//num : 입력받은 정수
+//a : 10의 자리
+//b : 1의 자리
+
+//3,6,9일때
+if (a%3 == 0) {
+//	카운트 증가
+	count++;
+}
+//3,6,9일때
+if (a%3 == 0 && b != 0) {
+//	카운트 증가
+	count++;
+}
+if (count == 2) {
+	System.out.println("박수짝짝");
+} else if (count == 1) {
+	System.out.println("박수짝");
+} else {
+	System.out.println("박수없음");
+}
+scanner.close();
+}

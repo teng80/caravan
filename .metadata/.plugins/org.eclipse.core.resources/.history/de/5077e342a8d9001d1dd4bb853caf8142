@@ -1,0 +1,25 @@
+package Chapter14;
+
+import java.time.LocalDateTime;
+
+public class KimTaeHyung_0504 {
+
+	public static void main(String[] args) {
+		
+		LocalDateTime dateTime = LocalDateTime.of(2023, 04, 14, 04, 30);
+//		LocalDateTime dateTime = LocalDateTime.now();
+		int hour = dateTime.getHour();
+		int minute = dateTime.getMinute();
+		
+		System.out.println("현재 시간은 "+hour+"시 "+minute+"분입니다.");
+		if (hour<12) {
+			System.out.println("Good Morning");
+		} else if (hour<18) {
+		System.out.println("Good Afternoon");
+		} else if (hour<20) {
+		System.out.println("Good Evening");
+		} else {
+		System.out.println("Good Night");
+		}		
+	}
+}

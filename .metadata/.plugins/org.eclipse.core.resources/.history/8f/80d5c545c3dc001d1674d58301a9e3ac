@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<jsp:useBean class="question.DivAndRemains" id="divAndRemains"></jsp:useBean>
+<jsp:setProperty property="num" name="divAndRemains"/>
+
+<h4>당신이 입력한 정보입니다.</h4>
+	
+	<%
+		
+		out.print("입력된 정수가 "+number.process() ?
+				"10의 자리와 1의 자리가 같습니다.":"10의 자리와 1의 자리가 같지 않습니다.");
+	%>
+	
+	
+	
+	
+	<%
+		if(number.getNum() % 11 == 0){
+			out.print("입력된 정수가 "+number.getNum()+"10의 자리와 1의 자리가 같습니다.");
+		} else {
+			out.print("입력된 정수가 "+number.getNum()+"10의 자리와 1의 자리가 같지 않습니다.");
+		}
+	%>
+	
+	
+	
+	
+	
+	
+	

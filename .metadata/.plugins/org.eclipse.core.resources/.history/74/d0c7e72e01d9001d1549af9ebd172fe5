@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<center>
+		<h3>[ 설정된 세션 값을 삭제하는 예제 ]</h3>
+	</center>
+	<hr>
+	removeAttribute() 메소드를 사용하여 세션 값을 삭제하는 예제입니다.
+	<%
+		String s_name;
+		String s_value="저는 세션이 저장된 첫 번째 값이에요. ^o^";
+		session.setAttribute("s_name_1", s_value);
+		
+		s_value="저는 세션이 저장된 두 번째 값이에요. ^o^";
+		session.setAttribute("s_name_2", s_value);
+		
+		s_value="저는 세션이 저장된 세 번째 값이에요. ^o^";
+		session.setAttribute("s_name_3", s_value);
+	%>
+</body>
+</html>

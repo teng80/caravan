@@ -1,0 +1,51 @@
+package question;
+
+import java.util.Scanner;
+
+public class ThreeSixNine {
+	private int count;
+	private int num;
+
+	public int getCount() {
+		return count;
+	}
+	public void setCount(int count) {
+		this.count = count;
+	}
+	public int getNum() {
+		return num;
+	}
+	public void setNum(int num) {
+		this.num = num;
+	}
+
+	public String process() {
+		//count : 3,6,9갯수
+		//num : 입력받은 정수
+		//a : 10의 자리
+		//b : 1의 자리
+		int a;
+		int b;
+		a = num/10;
+		b = num%10;
+		//3,6,9일때
+		if (a%3 == 0 && a != 0) { //a를 3으로 나눈 나머지가 0과 같다 그리고 a는 0이 아니다
+			//카운트 증가
+			count++;
+		}
+		//3,6,9일때
+		if (b%3 == 0 && b%10 != 0) { //b를 3으로 나눈 나머지가 0과 같다 그리고 b를10으로 나눈 나머지가 0이 아니다 
+			//카운트 증가
+			count++;
+		}
+		if (count == 2) {
+			return "박수짝짝";
+		} else if (count == 1) {
+			return "박수짝";
+		} else {
+			return "박수 없음";
+		}
+	}
+}
+
+

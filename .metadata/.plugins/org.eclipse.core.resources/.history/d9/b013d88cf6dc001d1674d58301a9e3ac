@@ -1,0 +1,35 @@
+package question;
+
+public class Capital {
+
+	char s;
+	
+	public char getS() {
+		return s;
+	}
+
+	public void setS(char s) {
+		this.s = s;
+	}
+
+	public String process() {
+		
+		String str = "";
+	
+		for (char i = 'a'; i >= s; i--) {
+			for (char j = 'a'; j <= i; j++) {	
+			str = j;
+		}
+		return str;
+	}
+}
+
+
+
+for (char i = c; i >= 'a'; i--) {	//-1씩 감소되면서 이전 알파벳 출력
+//	for (char j = 'a'; j <= c; j++) {	//c까지만 반복
+	//입력받은 알파벳부터 하나씩 이전 알파벳으로 반복출력
+	for (char j = 'a'; j <= i; j++) {	
+		System.out.print(j);
+	}
+	System.out.println();

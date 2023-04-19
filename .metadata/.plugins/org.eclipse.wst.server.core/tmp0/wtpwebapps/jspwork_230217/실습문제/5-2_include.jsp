@@ -1,0 +1,18 @@
+<%@page import="java.util.Calendar"%>
+<%@page import="sun.util.resources.CalendarData"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<%@ include file="5-2_header.jsp" %>
+<%-- 	<%@ page import="java.util.Date" %> --%>
+<%-- 	현재 시간 : <%= new Date() %> --%>
+	현재 시간 : <%= Calendar.getInstance().getTime() %>
+	
+</body>
+</html>

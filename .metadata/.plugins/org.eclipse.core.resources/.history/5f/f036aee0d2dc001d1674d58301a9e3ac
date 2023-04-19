@@ -1,0 +1,29 @@
+package question;
+
+import java.util.Scanner;
+
+public class Asterisk {
+	int n;
+	
+}
+
+
+
+
+
+int n = 0;
+//구구단 => 2중 for(행과 열 출력)
+//* 갯수를 행과 열로 출력 => 2중 for 사용
+//for (int i = 0; i < n; i++) {
+//감소시키는 로직을 위해서 역으로 진행
+for (int i = n; i > 0; i--) {
+//	for (int j = 0; j < n; j++) {
+//	하나씩 줄이기 위해서 i값 사용
+	for (int j = 0; j < i; j++) {
+		System.out.print("*");
+	}
+//	5개 출력후 엔터 필요
+	System.out.println();
+}
+}
+}

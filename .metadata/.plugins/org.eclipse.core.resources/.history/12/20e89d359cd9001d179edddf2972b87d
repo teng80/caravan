@@ -1,0 +1,24 @@
+package Chapter14;
+
+import java.util.Date;
+public class KimTaeHyung_0504 {
+
+	public static void main(String[] args) {
+		
+		  Date date = new Date();
+		  int time = date.getHours();
+		  
+		  System.out.println("현재시간은 " + date);
+		  if (time<11)
+		   System.out.println("아침");
+		  else if (time<15)
+		   System.out.println("점심");
+		  else if (time<20)
+		   System.out.println("오후");
+		  else
+		   System.out.println("밤");
+		
+
+	}
+
+}

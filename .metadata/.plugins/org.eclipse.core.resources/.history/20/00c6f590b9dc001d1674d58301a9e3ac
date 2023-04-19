@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form mathod="post" action="11-3_circle.jsp">
+		아 이 디 : <input type="text" name="id" size="20"><br>
+		
+				<input type="submit" value="전송">
+	</form>
+</body>
+</html>

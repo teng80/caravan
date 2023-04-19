@@ -1,0 +1,62 @@
+package question;
+
+public class Money {
+
+	private int won;
+	private int res;
+	
+	public String process() {
+		String result="";
+		
+		res = won/50000;
+		if (res > 0) {
+			result = "오만원권 "+res+"매";
+		}
+		won = won%50000;
+		res = won/10000;
+		if (res > 0) {
+			result = "만원권 "+res+"매";
+		}
+		won = won%10000;
+		res = won/1000;
+		if (res > 0) {
+			result = "천원권 "+res+"매";
+		}
+		won = won%1000;
+		res = won/100;
+		if (res > 0) {
+			result = "백원 "+res+"개";
+		}
+		won = won%100;
+		res = won/50;
+		if (res > 0) {
+			result = "오십원 "+res+"개";
+		}
+		won = won%50;
+		res = won/10;
+		if (res > 0) {
+			result = "십원 "+res+"개";
+		}
+		won = won%10;
+		res = won/1;
+		if (res > 0) {
+			result = "일원 "+res+"개";
+		}
+		return result;
+	}
+	
+	public int getWon() {
+		return won;
+	}
+	public void setWon(int won) {
+		this.won = won;
+	}
+	public int getRes() {
+		return res;
+	}
+	public void setRes(int res) {
+		this.res = res;
+	}	
+	
+	
+}

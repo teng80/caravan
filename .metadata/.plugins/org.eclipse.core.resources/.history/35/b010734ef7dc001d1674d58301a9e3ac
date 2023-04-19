@@ -1,0 +1,27 @@
+package question;
+
+public class Capital {
+
+	char s;
+	
+	public char getS() {
+		return s;
+	}
+
+	public void setS(char s) {
+		this.s = s;
+	}
+
+	public String process() {
+		
+		String str = "";
+	
+		for (char i = 'A'; i >= s; i--) {
+			for (char j = s; j <= i; j++) {	
+			str += j;
+			}
+		}
+		return str;
+	}
+}
+

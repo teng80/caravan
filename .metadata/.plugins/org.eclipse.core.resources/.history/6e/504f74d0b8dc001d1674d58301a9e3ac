@@ -1,0 +1,14 @@
+package area;
+
+public class Circle2 {
+	public void process() {
+		double pi = 3.14;
+		int radius = 0;
+		
+	
+		
+	}
+
+	  
+}
+

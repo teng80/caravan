@@ -1,0 +1,13 @@
+package area;
+
+public class Circle2 {
+	public void process() {
+		int radius = 0;
+		
+	
+		
+	}
+
+	  
+}
+

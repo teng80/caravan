@@ -1,0 +1,25 @@
+package question;
+
+public class Three {
+	
+	private int num;
+	
+	public String process() {
+		String result;
+		if (num/3 == 0) {
+			result = "num"; //3의 배수일때
+		} else {
+			result = "num"; // 아닐때
+		}
+		return result;
+	}
+
+	public int getNum() {
+		return num;
+	}
+
+	public void setNum(int num) {
+		this.num = num;
+	}
+	
+}

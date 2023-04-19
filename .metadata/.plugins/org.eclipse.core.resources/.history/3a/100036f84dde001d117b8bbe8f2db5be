@@ -1,0 +1,112 @@
+package question;
+
+public class Money {
+	
+	private int 오만원;
+	private int 만원;
+	private int 천원;
+	private int 백원;
+	private int 오십원;
+	private int 십원;
+	private int 일원;
+	
+	private int won;
+	private int res;
+	
+	public String process() {
+		String result="";
+		
+		res = won/50000;
+		if (res > 0) {
+			오만원 = res;
+		}
+		won = won%50000;
+		res = won/10000;
+		if (res > 0) {
+			만원 = res;
+		}
+		won = won%10000;
+		res = won/1000;
+		if (res > 0) {
+			천원 = res;
+		}
+		won = won%1000;
+		res = won/100;
+		if (res > 0) {
+			백원 = res;
+		}
+		won = won%100;
+		res = won/50;
+		if (res > 0) {
+			오십원 = res;
+		}
+		won = won%50;
+		res = won/10;
+		if (res > 0) {
+			십원 = res;
+		}
+		won = won%10;
+		res = won/1;
+		if (res > 0) {
+			일원 = res;
+		}
+		return result;
+	}
+	public int get오만원() {
+		return 오만원;
+	}
+	public void set오만원(int 오만원) {
+		this.오만원 = 오만원;
+	}
+	public int get만원() {
+		return 만원;
+	}
+	public void set만원(int 만원) {
+		this.만원 = 만원;
+	}
+	public int get천원() {
+		return 천원;
+	}
+	public void set천원(int 천원) {
+		this.천원 = 천원;
+	}
+	public int get백원() {
+		return 백원;
+	}
+	public void set백원(int 백원) {
+		this.백원 = 백원;
+	}
+	public int get오십원() {
+		return 오십원;
+	}
+	public void set오십원(int 오십원) {
+		this.오십원 = 오십원;
+	}
+	public int get십원() {
+		return 십원;
+	}
+	public void set십원(int 십원) {
+		this.십원 = 십원;
+	}
+	public int get일원() {
+		return 일원;
+	}
+	public void set일원(int 일원) {
+		this.일원 = 일원;
+	}
+	public int getWon() {
+		return won;
+	}
+	public void setWon(int won) {
+		this.won = won;
+	}
+	public int getRes() {
+		return res;
+	}
+	public void setRes(int res) {
+		this.res = res;
+	}
+	
+	
+		
+}

@@ -1,0 +1,62 @@
+package question;
+
+public class Money {
+
+	private int won;
+	private int res;
+	
+	public String process(int ft, int tt, int t, int h, int f, int t0, int w) {
+		String result="";
+		
+		res = won/50000;
+		if (res > 0) {
+			ft = res;
+		}
+		won = won%50000;
+		res = won/10000;
+		if (res > 0) {
+			tt = res;
+		}
+		won = won%10000;
+		res = won/1000;
+		if (res > 0) {
+			t = res;
+		}
+		won = won%1000;
+		res = won/100;
+		if (res > 0) {
+			h = res;
+		}
+		won = won%100;
+		res = won/50;
+		if (res > 0) {
+			f = res;
+		}
+		won = won%50;
+		res = won/10;
+		if (res > 0) {
+			t0 = res;
+		}
+		won = won%10;
+		res = won/1;
+		if (res > 0) {
+			w = res;
+		}
+		return result;
+	}
+	
+	public int getWon() {
+		return won;
+	}
+	public void setWon(int won) {
+		this.won = won;
+	}
+	public int getRes() {
+		return res;
+	}
+	public void setRes(int res) {
+		this.res = res;
+	}	
+	
+	
+}

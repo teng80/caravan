@@ -1,0 +1,71 @@
+package question;
+
+public class Arithmetic {
+	
+	private int op1;
+	private String op;
+	private int op2;
+	
+	public int getOp1() {
+		return op1;
+	}
+
+
+
+	public void setOp1(int op1) {
+		this.op1 = op1;
+	}
+
+
+
+	public String getOp() {
+		return op;
+	}
+
+
+
+	public void setOp(String op) {
+		this.op = op;
+	}
+
+
+
+	public int getOp2() {
+		return op2;
+	}
+
+
+
+	public void setOp2(int op2) {
+		this.op2 = op2;
+	}
+
+
+
+	public String process(int i) {
+	
+		int op1=0;
+		String op;
+		int op2=0;
+		int result;
+	
+		if (op.equals("+")) {
+			result = op1+op2;
+		} else if (op.equals("-")) {
+			result = op1-op2;
+		} else if (op.equals("*")) {
+			result = op1*op2;
+		} else if (op.equals("/")) {
+			if (op2 == 0) {
+				System.out.println("0으로 나눌 수 없습니다.");
+				
+			} else {
+				result = op1/op2;
+			}
+		} else {
+			System.out.println("사칙연산이 아닙니다.");
+		}
+		return op1+"와"+op+op2+"의 계산결과는 "+op1+op+op2+"의 계산결과는 "+result;
+	}
+
+}

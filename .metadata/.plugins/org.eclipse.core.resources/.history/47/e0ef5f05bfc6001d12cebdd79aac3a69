@@ -1,0 +1,19 @@
+package Chapter04;
+
+import java.util.Random;
+
+public class RandomTen {
+
+	public static void main(String[] args) {
+		int rNumber;
+		Random generator = new Random();
+		
+		while (true) {
+			rNumber = generator.nextInt(10)+1; //난수 발생(1~10의 정수)
+			System.out.print("랜덤한 정수들 : "+rNumber);
+			System.out.print("평균은 "+(rNumber/10));
+				}
+			}
+	}
+
+

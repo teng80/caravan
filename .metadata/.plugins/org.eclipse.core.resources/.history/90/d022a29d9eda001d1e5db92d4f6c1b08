@@ -1,0 +1,10 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!-- Circle 클래스로 myBean 객체 생성 -->
+<jsp:useBean class="area.Circle" id="myBean" scope="page"></jsp:useBean>
+<hr>
+<h4>원의 면적 출력하기</h4>
+반지름이 
+<% myBean.setRadius(10); %>
+<%= myBean.getRadius() %>
+<%= myBean.getPi() %>

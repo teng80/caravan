@@ -1,0 +1,22 @@
+package question;
+
+public class Money {
+
+	private int money;
+	
+	for (int i = 0; i < money.length; i++) {
+//		65123/50000=몫은 1 and 나머지는 15123
+//		15123/10000=몫은 1 and 나머지는 5123
+//		5123/1000=몫은 5 and 나머지는 123
+//		123/500=몫은 0 and 나머지는 123(건너띔:0이니깐)
+//		123/100=몫은 1 and 나머지는 23
+//		23/50=몫은 0 and 나머지는 23(건너띔:0이니깐)
+//		23/10=몫은 2 and 나머지는 3
+//		3/1=몫은 3 and 나머지는 0
+		int res = money/unit[i];
+		if (res>0) {
+			System.out.println(unit[i]+"원 짜리 : "+res+"개");
+//			15123=>5123=>123=>23=>3=>0
+			money = money%unit[i];
+		}
+}

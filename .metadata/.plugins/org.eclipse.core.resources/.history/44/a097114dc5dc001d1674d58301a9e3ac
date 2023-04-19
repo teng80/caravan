@@ -1,0 +1,39 @@
+package question;
+
+public class Arithmetic {
+	
+	private int num;
+	
+	
+	public int process() {
+	
+		int op1;
+		String op;
+		int op2;
+		int result;
+	
+		if (op.equals("+")) {
+			result = op1+op2;
+		} else if (op.equals("-")) {
+			result = op1-op2;
+		} else if (op.equals("*")) {
+			result = op1*op2;
+		} else if (op.equals("/")) {
+			if (op2 == 0) {
+				System.out.println("0으로 나눌 수 없습니다.");
+				break;
+			} else {
+				result = op1/op2;
+			}
+		} else {
+			System.out.println("사칙연산이 아닙니다.");
+		}
+	}
+	public int getNum() {
+		return num;
+	}
+	
+	public void setNum(int num) {
+		this.num = num;
+	}
+}

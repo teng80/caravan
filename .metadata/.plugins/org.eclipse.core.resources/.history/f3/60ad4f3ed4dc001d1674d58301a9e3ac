@@ -1,0 +1,25 @@
+package question;
+
+import java.util.Scanner;
+
+public class Asterisk {
+	int n;
+
+	public int getN() {
+		return n;
+	}
+
+	public void setN(int n) {
+		this.n = n;
+	}
+	
+	public String process() {
+		String result="";
+		for (int i = n; i > 0; i--) {
+			for (int j = 0; j < i; j++) {
+				result="*";
+			}
+		}
+		return result;
+	}
+}
